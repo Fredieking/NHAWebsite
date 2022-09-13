@@ -3,6 +3,24 @@
 <html>
 <head>
 <meta charset="utf-8">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
 <title>Info</title>
 </head>
 <body>
@@ -68,6 +86,26 @@ Op de Molenbuurt is het mogelijk de buspassagiers uit- en in te laten stappen. V
 Parkeren voor touringcars
 Bij het parkeerterrein van de Wielerbaan (Terborchlaan) (naast verkeersplein Kooimeer) kunt u tijdens de kaasmarkt uw touringcar parkeren.
 .
+
+<br>
+<br>
+<div class="row">
+<div class="column">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/Zb_9Q1Ko8uA"
+title="YouTube video player" frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen></iframe>
+</div>
+
+<div class="column">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/UOIQ7u1ILGo"
+title="YouTube video player" frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen></iframe>
+</div>
+</div>
 
 <footer><p>Kaasmarkt</p></footer>
 </body>
