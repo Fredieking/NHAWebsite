@@ -2,8 +2,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  </style>
 <meta charset="utf-8">
-<title>Info</title>
+<title>Galerij</title>
 </head>
 <body>
 <header><img src="img/Kaasmarkt.jpg"></header>
@@ -24,6 +42,22 @@ Info
 </td></tr>
 </table>
 </nav>
-<footer><p></p></footer>
+
+<div class="row">
+	<div class="column">
+		<img src="img/kaasmarkt 1.jpeg" width="300">
+	</div>
+	<div class="column">
+		<img src="img/kaasmarkt 2.jpg" width="300">
+	</div>
+	<div class="column">
+		<img src="img/kaasmarkt 3.jpg" width="300">
+	</div>
+</div>
+
+<audio controls
+src="sound/file_example_WAV_2MG.wav"></audio>
+
+<footer><p>Kaasmarkt</p></footer>
 </body>
 </html>
